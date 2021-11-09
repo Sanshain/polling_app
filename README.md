@@ -22,3 +22,7 @@ For frontend delelopment also you need following steps:
 API:
 
 API Schema is availible on this [address](http://127.0.0.1/open_api)
+
+Other langs:
+
+- [ru](./docs/ru.MD)
