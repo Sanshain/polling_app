@@ -590,7 +590,7 @@
 	  // const [count, setCount] = useStore('count')
 	  // const { dispatch, count } = useStoreon('count')
 	  y$1(() => {
-	    document.title = props.title;
+	    document.title = 'props.title777';
 	  }, [props.title]); // @ts-ignore
 
 	  return v(p, null, v(Header, null), v(Router, null, v(Polls, {

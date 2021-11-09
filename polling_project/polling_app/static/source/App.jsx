@@ -43,7 +43,7 @@ const App = props => {
 	// const { dispatch, count } = useStoreon('count')
 
 	useEffect(() => {
-		document.title = props.title;
+		document.title = 'props.title777';
 	}, [props.title]);
 	
 	// @ts-ignore
