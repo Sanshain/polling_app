@@ -9,7 +9,7 @@
 Before you start, you need to be sure that you do not have python installed locally and node.js. If everything is fine, let's get started
 
 1. Select the destination folder and run the following command in the terminal: `git clone git@github.com:Sanshain/polls_app.git .`
-2. After cloning go inside via `cd polling_project` and install all python dependencies: `pip install -r requirements`
+2. After cloning go inside via `cd polling_project` and install all python dependencies: `pip install -r requirements.txt`
 3. Run dev server via `python manage.py runserver`
 
 ## Development
