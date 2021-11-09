@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from 'preact/hooks'
 import { Router } from 'preact-router';
 
 import { styled, css, setup } from 'goober';
+import { Link } from 'preact-router/match';
 
 // @ts-ignore
 import { useStore, initStore } from "./store/source/state";
@@ -13,7 +14,9 @@ import Button from "./button";
 import Header from "./components/header";
 import Polls from "./components/Polls";
 import Results from "./components/Results";
-import Poll from "./components/Poll";
+import Question from "./components/Question";
+import Contact from "./components/Contact";
+
 
 // @ts-ignore
 import style from "./style.css";
@@ -41,18 +44,17 @@ const App = props => {
 	// const [count, setCount] = useStore('count')
 
 	// const { dispatch, count } = useStoreon('count')
-
-	useEffect(() => {
-		document.title = 'props.title777';
-	}, [props.title]);
 	
 	// @ts-ignore
 	return <>
-		<Header />
+		<Link href='/'>
+			<Header />
+		</Link>
 		<Router>
 			<Polls path="/" />
-			<Poll path="/polls/:poll?" />
-			<Results path="/results" />			
+			<Question path="/polls/:pollID" />
+			<Contact path="/finish/:user_sign" />
+			<Results path="/results" />
 			{/* <Error type="404" default /> */}
 		</Router>
 

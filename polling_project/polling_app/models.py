@@ -1,6 +1,8 @@
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models import QuerySet
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
 
 from django.utils.translation import ugettext_lazy as _
 
@@ -21,6 +23,7 @@ class Poll(models.Model):
     start_date = models.DateField()
     finish_date = models.DateField()
     desc = models.TextField(verbose_name=_('Description'), blank=True)
+    active = models.BooleanField(default=True)
 
     def save(self, *args, **kwargs):
         if self.start_date > self.finish_date:
@@ -30,9 +33,16 @@ class Poll(models.Model):
 
     def __str__(self):
         return f'{self.name} ({self.start_date.year})'
+    
+
+# @receiver(pre_save, sender=Poll)
+# def my_handler(sender, instance, created, **kwargs):
+#     pass
 
 
 class Choice(models.Model):
+    objects: QuerySet
+
     quest = models.ForeignKey('Question', on_delete=models.CASCADE, related_name='choices')
     value = models.CharField(max_length=70)
 
@@ -42,6 +52,7 @@ class Choice(models.Model):
 
 class Question(models.Model):
     choices: QuerySet
+    objects: QuerySet
 
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
     text = models.TextField()
@@ -57,12 +68,25 @@ class Question(models.Model):
 
 
 class Answer(models.Model):
-    user_sign = models.ForeignKey('UserSign', on_delete=models.SET_NULL, null=True)
-    quest = models.OneToOneField(Question, on_delete=models.CASCADE)
+    # class Meta:
+    #     unique_together = (
+    #         'user_sign',
+    #         'quest'
+    #     )
+        
+    objects: QuerySet    
+
+    user_sign = models.ForeignKey('UserSign', on_delete=models.SET_NULL, null=True, related_name='answers')
+    quest = models.ForeignKey(Question, on_delete=models.CASCADE)
     value = models.CharField(max_length=300)
 
 
 class UserSign(models.Model):
+    objects: QuerySet
+
     # poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
-    email = models.EmailField()
-    phone = models.CharField(max_length=20)
+    email = models.EmailField(blank=True, null=True)
+    phone = models.CharField(max_length=20, null=True, blank=True)
+
+    def __str__(self):
+        return self.email or self.phone or super().__str__()

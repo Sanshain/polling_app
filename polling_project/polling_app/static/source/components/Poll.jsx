@@ -5,23 +5,25 @@ import { useState } from 'preact/hooks'
 
 import { useStore } from "../store/source/state";
 
-const Polls = props => {
+import { Link } from 'preact-router/match';
 
+//@ts-ignore
+import style from "./style.css";
 
-
-    const [text] = useState('minus')
-
-    const [count, setCount] = useStore('count', 0)
+// const Poll = (props: { poll: { id: number, name: string } }) => {
+const Poll = (props) => {
 
 
     // @ts-ignore
-    return <>
-        <h1>Polls</h1>
-        <div>
-            <span>some poll</span>
-        </div>
+    return <>        
+        <Link className={style.poll_href} href={`/polls/${props.poll.id}`}>
+            <div class={style.poll}>
+                <span>{props.poll.name}</span>
+                <span style='float: right; color: gray'>{props.poll.length} questions</span>
+            </div>
+        </Link>
     </>
     
 }
 
-export default Polls
+export default Poll

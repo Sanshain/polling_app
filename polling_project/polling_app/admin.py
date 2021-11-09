@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from django.db.models import QuerySet, Count, F
 
-from polling_app.models import Poll, Question, Choice
+from polling_app.models import Poll, Question, Choice, UserSign, Answer
 
 
 class QuestionInline(admin.StackedInline):
@@ -12,9 +12,15 @@ class QuestionInline(admin.StackedInline):
 
 class PollAdmin(admin.ModelAdmin):
     list_display = ['name', 'questions_count', 'get_desc']
+    search_fields = ('name',)
     inlines = [
         # QuestionInline
     ]
+
+    def get_readonly_fields(self, request, obj=None):
+        if obj:  # editing an existing object
+            return self.readonly_fields + ('start_date',)
+        return self.readonly_fields
 
     def get_queryset(self, request):
         qs: QuerySet = super().get_queryset(request)
@@ -36,13 +42,15 @@ class ChoiceInline(admin.TabularInline):
 
 
 class QuestionAdmin(admin.ModelAdmin):
+    autocomplete_fields = ('poll',)
+    search_fields = ('text', )
+
     preserve_filters = True
     list_display = ['text', 'kind', 'choices_len', 'poll_name']
     list_filter = (
         'poll__name',
         # 'kind',
     )
-    search_fields = ('text', )
     inlines = [
         ChoiceInline
     ]
@@ -63,3 +71,5 @@ class QuestionAdmin(admin.ModelAdmin):
 admin.site.register(Question, QuestionAdmin)
 
 # admin.site.register(Question)
+admin.site.register(UserSign)
+admin.site.register(Answer)

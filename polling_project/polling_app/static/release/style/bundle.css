@@ -3,6 +3,13 @@
   font-size: 30px;
 }
 
+body{
+  margin-top: 5em;
+}
+
+h1, h3{
+  text-align: center;
+}
 .style_header__2lFIG {
 	position: fixed;
 	left: 0;
@@ -50,4 +57,107 @@
 
 .style_header__2lFIG nav a.style_active__12geY {
 	background: rgba(0,0,0,0.4);
+}
+
+
+.style_poll__3m5db{
+    padding      : 1 em;
+    border-radius: 1 em;
+    margin       : 1 em;
+    background-color: aliceblue;	
+}
+.style_poll__1OI-i{
+    padding      : 1em;
+    border-radius: 1em;
+    margin       : 1em;
+    background-color: aliceblue;	
+    cursor: pointer;
+}
+
+.style_poll_href__3Yi5q{
+    text-decoration: none;
+    color: #333;
+}
+
+.style_poll_href__3Yi5q>div{
+    transition: .3s;
+}
+
+.style_poll_href__3Yi5q>div:hover{
+    background-color: cornflowerblue;
+    color: cornsilk;
+}
+
+
+
+
+.style_quest__1lyrt{
+    margin: 1em;
+}
+
+.style_quest__1lyrt p{
+    margin: 1em;
+    font-size: large;
+}
+
+.style_quest__1lyrt textarea{
+    width: calc(100% - 2em);
+    display: block;    
+    padding      : 1em;
+    border-radius: 1em;
+    height       : 3em;    
+}
+
+.style_results_form__2wB6K input[type="submit"], .style_quest__1lyrt button, .style_finish__1LGMZ button{
+    display: block;
+    display         : block;
+    margin          : 2em auto;
+    padding         : 0.6em 2em;
+    background-color: #9363bf;
+    color           : white;
+    border          : 1px solid gray;
+    border-radius   : 1em;
+    cursor          : pointer;    
+}
+
+.style_finish__1LGMZ{
+    top: 6em;
+    position: relative;    
+}
+
+.style_finish__1LGMZ h4{
+    text-align: center;
+}
+
+.style_results_form__2wB6K input, .style_finish__1LGMZ input{
+    width        : 60%;
+    display      : block;
+    margin       : 1em auto;
+    padding      : 8px;
+    border-radius: 1em;
+    border       : 1px solid gray;    
+}
+
+.style_choices__1AIJh li, .style_choices__1AIJh input{
+    list-style-type:none;
+    cursor: pointer;
+    margin: 1em;
+    /* display: block; */
+}
+
+details{
+    margin           : 2em 9em;    
+    user-select      : none;
+}
+
+details>ul{
+    margin-left: 10 em;    
+}
+
+details li li{
+    color: gray;
+}
+
+details .style_active__1jijZ{
+    color: black;
 }

@@ -56,7 +56,7 @@ export default {
 		}),
 		resolve({
 			browser: true,
-			extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+			extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', 'css']
 		}),
 		// development && serve({
 		// 	open: true,
@@ -70,9 +70,9 @@ export default {
 		babel({
 			exclude: 'node_modules/**'
 		}),
-		// typescript({
-		// 	typescript: require('typescript')
-		// }),				
+		typescript({
+			typescript: require('typescript')
+		}),				
 		commonjs(),
 		es3(),
 		// css({ output: 'style/bundle.css', minimize: production }),

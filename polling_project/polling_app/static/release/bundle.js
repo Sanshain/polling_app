@@ -20,7 +20,7 @@
 		get options () { return n; }
 	});
 
-	var t$1,u$1,r$1,o$1=0,i$1=[],c$1=n.__r,f$1=n.diffed,e$1=n.__c,a$1=n.unmount;function v$1(t,r){n.__h&&n.__h(u$1,t,o$1||r),o$1=0;var i=u$1.__H||(u$1.__H={__:[],__h:[]});return t>=i.__.length&&i.__.push({}),i.__[t]}function m$1(n){return o$1=1,p$1(k$1,n)}function p$1(n,r,o){var i=v$1(t$1++,2);return i.t=n,i.__c||(i.__c=u$1,i.__=[o?o(r):k$1(void 0,r),function(n){var t=i.t(i.__[0],n);i.__[0]!==t&&(i.__=[t,i.__[1]],i.__c.setState({}));}]),i.__}function y$1(r,o){var i=v$1(t$1++,3);!n.__s&&j$1(i.__H,o)&&(i.__=r,i.__H=o,u$1.__H.__h.push(i));}function q$1(){i$1.some(function(t){if(t.__P)try{t.__H.__h.forEach(b$1),t.__H.__h.forEach(g$1),t.__H.__h=[];}catch(u){return t.__H.__h=[],n.__e(u,t.__v),!0}}),i$1=[];}n.__r=function(n){c$1&&c$1(n),t$1=0;var r=(u$1=n.__c).__H;r&&(r.__h.forEach(b$1),r.__h.forEach(g$1),r.__h=[]);},n.diffed=function(t){f$1&&f$1(t);var u=t.__c;u&&u.__H&&u.__H.__h.length&&(1!==i$1.push(u)&&r$1===n.requestAnimationFrame||((r$1=n.requestAnimationFrame)||function(n){var t,u=function(){clearTimeout(r),x$1&&cancelAnimationFrame(t),setTimeout(n);},r=setTimeout(u,100);x$1&&(t=requestAnimationFrame(u));})(q$1));},n.__c=function(t,u){u.some(function(t){try{t.__h.forEach(b$1),t.__h=t.__h.filter(function(n){return !n.__||g$1(n)});}catch(r){u.some(function(n){n.__h&&(n.__h=[]);}),u=[],n.__e(r,t.__v);}}),e$1&&e$1(t,u);},n.unmount=function(t){a$1&&a$1(t);var u=t.__c;if(u&&u.__H)try{u.__H.__.forEach(b$1);}catch(t){n.__e(t,u.__v);}};var x$1="function"==typeof requestAnimationFrame;function b$1(n){"function"==typeof n.u&&n.u();}function g$1(n){n.u=n.__();}function j$1(n,t){return !n||t.some(function(t,u){return t!==n[u]})}function k$1(n,t){return "function"==typeof t?t(n):t}
+	var t$1,u$1,r$1,o$1=0,i$1=[],c$1=n.__r,f$1=n.diffed,e$1=n.__c,a$1=n.unmount;function v$1(t,r){n.__h&&n.__h(u$1,t,o$1||r),o$1=0;var i=u$1.__H||(u$1.__H={__:[],__h:[]});return t>=i.__.length&&i.__.push({}),i.__[t]}function m$1(n){return o$1=1,p$1(k$1,n)}function p$1(n,r,o){var i=v$1(t$1++,2);return i.t=n,i.__c||(i.__c=u$1,i.__=[o?o(r):k$1(void 0,r),function(n){var t=i.t(i.__[0],n);i.__[0]!==t&&(i.__=[t,i.__[1]],i.__c.setState({}));}]),i.__}function y$1(r,o){var i=v$1(t$1++,3);!n.__s&&j$1(i.__H,o)&&(i.__=r,i.__H=o,u$1.__H.__h.push(i));}function h$1(n){return o$1=5,_$1(function(){return {current:n}},[])}function _$1(n,u){var r=v$1(t$1++,7);return j$1(r.__H,u)?(r.__H=u,r.__h=n,r.__=n()):r.__}function q$1(){i$1.some(function(t){if(t.__P)try{t.__H.__h.forEach(b$1),t.__H.__h.forEach(g$1),t.__H.__h=[];}catch(u){return t.__H.__h=[],n.__e(u,t.__v),!0}}),i$1=[];}n.__r=function(n){c$1&&c$1(n),t$1=0;var r=(u$1=n.__c).__H;r&&(r.__h.forEach(b$1),r.__h.forEach(g$1),r.__h=[]);},n.diffed=function(t){f$1&&f$1(t);var u=t.__c;u&&u.__H&&u.__H.__h.length&&(1!==i$1.push(u)&&r$1===n.requestAnimationFrame||((r$1=n.requestAnimationFrame)||function(n){var t,u=function(){clearTimeout(r),x$1&&cancelAnimationFrame(t),setTimeout(n);},r=setTimeout(u,100);x$1&&(t=requestAnimationFrame(u));})(q$1));},n.__c=function(t,u){u.some(function(t){try{t.__h.forEach(b$1),t.__h=t.__h.filter(function(n){return !n.__||g$1(n)});}catch(r){u.some(function(n){n.__h&&(n.__h=[]);}),u=[],n.__e(r,t.__v);}}),e$1&&e$1(t,u);},n.unmount=function(t){a$1&&a$1(t);var u=t.__c;if(u&&u.__H)try{u.__H.__.forEach(b$1);}catch(t){n.__e(t,u.__v);}};var x$1="function"==typeof requestAnimationFrame;function b$1(n){"function"==typeof n.u&&n.u();}function g$1(n){n.u=n.__();}function j$1(n,t){return !n||t.some(function(t,u){return t!==n[u]})}function k$1(n,t){return "function"==typeof t?t(n):t}
 
 	var EMPTY$1 = {};
 
@@ -391,36 +391,7 @@
 		'default': Router
 	});
 
-	let e$2={data:""},t$2=t=>{if("undefined"!=typeof window){let e=t?t.querySelector("#_goober"):window._goober;return e||(e=(t||document.head).appendChild(document.createElement("style")),e.innerHTML=" ",e.id="_goober"),e.firstChild}return t||e$2},l$1=/(?:([A-Z0-9-%@]+) *:? *([^{;]+?);|([^;}{]*?) *{)|(})/gi,a$2=/\/\*[\s\S]*?\*\/|\s{2,}|\n/gm,n$1=(e,t)=>{let r,l="",a="",o="";for(let c in e){let s=e[c];"object"==typeof s?(r=t?t.replace(/([^,])+/g,e=>c.replace(/([^,])+/g,t=>/&/g.test(t)?t.replace(/&/g,e):e?e+" "+t:t)):c,a+="@"==c[0]?"f"==c[1]?n$1(s,c):c+"{"+n$1(s,"k"==c[1]?"":t)+"}":n$1(s,r)):"@"==c[0]&&"i"==c[1]?l=c+" "+s+";":o+=n$1.p?n$1.p(c.replace(/[A-Z]/g,"-$&").toLowerCase(),s):c.replace(/[A-Z]/g,"-$&").toLowerCase()+":"+s+";";}return o[0]?(r=t?t+"{"+o+"}":o,l+r+a):l+a},o$2={},c$2=e=>{let t="";for(let r in e)t+=r+("object"==typeof e[r]?c$2(e[r]):e[r]);return t},s$1=(e,t,r,s,i)=>{let p="object"==typeof e?c$2(e):e,f=o$2[p]||(o$2[p]=(e=>{let t=0,r=e.length,l=11;for(;t<r;)l=101*l+e.charCodeAt(t++)>>>0;return "go"+l})(p));if(!o$2[f]){let t="object"==typeof e?e:(e=>{let t,r=[{}];for(;t=l$1.exec(e.replace(a$2,""));)t[4]&&r.shift(),t[3]?r.unshift(r[0][t[3]]=r[0][t[3]]||{}):t[4]||(r[0][t[1]]=t[2]);return r[0]})(e);o$2[f]=n$1(i?{["@keyframes "+f]:t}:t,r?"":"."+f);}return ((e,t,r)=>{-1==t.data.indexOf(e)&&(t.data=r?e+t.data:t.data+e);})(o$2[f],t,s),f},i$2=(e,t,r)=>e.reduce((e,l,a)=>{let o=t[a];if(o&&o.call){let e=o(r),t=e&&e.props&&e.props.className||/^go/.test(e)&&e;o=t?"."+t:e&&"object"==typeof e?e.props?"":n$1(e,""):e;}return e+l+(null==o?"":o)},"");function p$2(e){let r=this||{},l=e.call?e(r.p):e;return s$1(l.unshift?l.raw?i$2(l,[].slice.call(arguments,1),r.p):l.reduce((e,t)=>t?Object.assign(e,t.call?t(r.p):t):e,{}):l,t$2(r.target),r.g,r.o,r.k)}let f$2,u$2,d$1,g$2=p$2.bind({g:1}),b$2=p$2.bind({k:1});function h$1(e,t,r,l){n$1.p=t,f$2=e,u$2=r,d$1=l;}function m$2(e,t){let r=this||{};return function(){let l=arguments;function a(n,o){let c=Object.assign({},n),s=c.className||a.className;r.p=Object.assign({theme:u$2&&u$2()},c),r.o=/ *go\d+/g.test(s),c.className=p$2.apply(r,l)+(s?" "+s:""),t&&(c.ref=o);let i=c.as||e;return d$1&&i[0]&&d$1(c),f$2(i,c)}return t?t(a):a}}
-
-	// //@ts-check
-	let states = {};
-	function setState(key, value) {
-	  for (const hook of states[key].hooks) {
-	    // console.log(hook);
-	    hook(value);
-	  }
-	}
-	function useStore(key, init_value) {
-	  const [value, setValue] = m$1(init_value !== undefined ? init_value : (states[key] || {}).initState);
-
-	  if (key in states) {
-	    !~states[key].hooks.indexOf(setValue) && states[key].hooks.push(setValue);
-	  } else states[key] = {
-	    hooks: [setValue],
-	    initState: init_value
-	  };
-
-	  return [value, setState.bind(null, key)];
-	}
-	function initStore(init_dict) {
-	  for (const key in init_dict) {
-	    states[key] = {
-	      hooks: [],
-	      initState: init_dict[key]
-	    };
-	  }
-	}
+	let e$2={data:""},t$2=t=>{if("undefined"!=typeof window){let e=t?t.querySelector("#_goober"):window._goober;return e||(e=(t||document.head).appendChild(document.createElement("style")),e.innerHTML=" ",e.id="_goober"),e.firstChild}return t||e$2},l$1=/(?:([A-Z0-9-%@]+) *:? *([^{;]+?);|([^;}{]*?) *{)|(})/gi,a$2=/\/\*[\s\S]*?\*\/|\s{2,}|\n/gm,n$1=(e,t)=>{let r,l="",a="",o="";for(let c in e){let s=e[c];"object"==typeof s?(r=t?t.replace(/([^,])+/g,e=>c.replace(/([^,])+/g,t=>/&/g.test(t)?t.replace(/&/g,e):e?e+" "+t:t)):c,a+="@"==c[0]?"f"==c[1]?n$1(s,c):c+"{"+n$1(s,"k"==c[1]?"":t)+"}":n$1(s,r)):"@"==c[0]&&"i"==c[1]?l=c+" "+s+";":o+=n$1.p?n$1.p(c.replace(/[A-Z]/g,"-$&").toLowerCase(),s):c.replace(/[A-Z]/g,"-$&").toLowerCase()+":"+s+";";}return o[0]?(r=t?t+"{"+o+"}":o,l+r+a):l+a},o$2={},c$2=e=>{let t="";for(let r in e)t+=r+("object"==typeof e[r]?c$2(e[r]):e[r]);return t},s$1=(e,t,r,s,i)=>{let p="object"==typeof e?c$2(e):e,f=o$2[p]||(o$2[p]=(e=>{let t=0,r=e.length,l=11;for(;t<r;)l=101*l+e.charCodeAt(t++)>>>0;return "go"+l})(p));if(!o$2[f]){let t="object"==typeof e?e:(e=>{let t,r=[{}];for(;t=l$1.exec(e.replace(a$2,""));)t[4]&&r.shift(),t[3]?r.unshift(r[0][t[3]]=r[0][t[3]]||{}):t[4]||(r[0][t[1]]=t[2]);return r[0]})(e);o$2[f]=n$1(i?{["@keyframes "+f]:t}:t,r?"":"."+f);}return ((e,t,r)=>{-1==t.data.indexOf(e)&&(t.data=r?e+t.data:t.data+e);})(o$2[f],t,s),f},i$2=(e,t,r)=>e.reduce((e,l,a)=>{let o=t[a];if(o&&o.call){let e=o(r),t=e&&e.props&&e.props.className||/^go/.test(e)&&e;o=t?"."+t:e&&"object"==typeof e?e.props?"":n$1(e,""):e;}return e+l+(null==o?"":o)},"");function p$2(e){let r=this||{},l=e.call?e(r.p):e;return s$1(l.unshift?l.raw?i$2(l,[].slice.call(arguments,1),r.p):l.reduce((e,t)=>t?Object.assign(e,t.call?t(r.p):t):e,{}):l,t$2(r.target),r.g,r.o,r.k)}let f$2,u$2,d$1,g$2=p$2.bind({g:1}),b$2=p$2.bind({k:1});function h$2(e,t,r,l){n$1.p=t,f$2=e,u$2=r,d$1=l;}function m$2(e,t){let r=this||{};return function(){let l=arguments;function a(n,o){let c=Object.assign({},n),s=c.className||a.className;r.p=Object.assign({theme:u$2&&u$2()},c),r.o=/ *go\d+/g.test(s),c.className=p$2.apply(r,l)+(s?" "+s:""),t&&(c.ref=o);let i=c.as||e;return d$1&&i[0]&&d$1(c),f$2(i,c)}return t?t(a):a}}
 
 	function getAugmentedNamespace(n) {
 		if (n.__esModule) return n;
@@ -528,7 +499,17 @@
 	Match.Link = Link;
 	});
 
-	var style = {"header":"style_header__2lFIG","active":"style_active__12geY"};
+	// //@ts-check
+	function initStore(init_dict) {
+	  for (const key in init_dict) {
+	    ({
+	      hooks: [],
+	      initState: init_dict[key]
+	    });
+	  }
+	}
+
+	var style = {"header":"style_header__2lFIG","active":"style_active__12geY","poll":"style_poll__3m5db"};
 
 	// @ts-ignore
 	// let r = '5'
@@ -548,35 +529,201 @@
 	  }, "Completed polls")));
 	};
 
+	var style$1 = {"poll":"style_poll__1OI-i","poll_href":"style_poll_href__3Yi5q","quest":"style_quest__1lyrt","results_form":"style_results_form__2wB6K","finish":"style_finish__1LGMZ","choices":"style_choices__1AIJh","active":"style_active__1jijZ"};
+
+	//@ts-check
+
+	const Poll = props => {
+	  // @ts-ignore
+	  return v(p, null, v(match.Link, {
+	    className: style$1.poll_href,
+	    href: `/polls/${props.poll.id}`
+	  }, v("div", {
+	    class: style$1.poll
+	  }, v("span", null, props.poll.name), v("span", {
+	    style: "float: right; color: gray"
+	  }, props.poll.length, " questions"))));
+	};
+
 	//@ts-check
 
 	const Polls = props => {
-	  // const [text] = useState('minus')
-	  // const [count, setCount] = useStore('count', 0)
-	  // @ts-ignore
-	  return v(p, null, v("h1", null, "Polls"), v("div", null, v("span", null, "some polls")));
+	  // const [polls, setData] = useState < { id: number, name: string }[] > ([]);
+	  const [polls, setData] = m$1([]); // const [count, setCount] = useStore('count', 0)
+
+	  y$1(() => {
+	    fetch('polls').then(r => r.ok ? r.json() : null).then(r => {
+	      console.log(r);
+	      setData(r);
+	    });
+	  }, []); // @ts-ignore
+
+	  return v(p, null, v("h1", null, "Select the survey you want to take:"), v("div", null, polls.map((poll, i) => v(Poll, {
+	    poll: poll
+	  }))));
 	};
 
 	//@ts-check
 
 	const Polls$1 = props => {
-	  const [text] = m$1('minus');
-	  const [count, setCount] = useStore('count', 0); // @ts-ignore
+	  const [results, setResults] = m$1({});
 
-	  return v(p, null, v("h1", null, "Polls"), v("div", null, v("span", null, "some results")));
+	  function onSubmit(event) {
+	    if (event.key && event.key != 'Enter') return;
+	    event.preventDefault();
+	    console.log(event); // @ts-ignore
+
+	    let v$1 = document.querySelector('input[type="search"]').value;
+	    if (!v$1 || v$1.length < 2) return;
+	    fetch('/answer?s=' + v$1).then(r => r.ok ? r.json() : false).then(r => {
+	      setResults(r.reduce(function (acc, obj) {
+	        var key = obj.poll;
+
+	        if (!acc[key]) {
+	          acc[key] = [];
+	        }
+
+	        acc[key].push(v("li", null, v("h4", null, obj.question, "?"), obj.options.length ? v("ul", null, " ", obj.options.map((o, i) => v("li", {
+	          class: obj.value == i ? style$1.active : ''
+	        }, o.value)), " ") : v("p", null, obj.value)));
+	        return acc;
+	      }, {})); // setResults(r);
+	    });
+	  } // @ts-ignore
+
+
+	  return v(p, null, v("h1", null, "Enter your info to know your results"), v("form", {
+	    class: style$1.results_form
+	  }, v("input", {
+	    type: "search",
+	    placeholder: "enter please your identifier id, e-mail or phone number to look up your results",
+	    onKeyDown: onSubmit
+	  }), v("input", {
+	    type: "submit",
+	    value: "search",
+	    onClick: onSubmit
+	  })), Object.entries(results).map(([name, results], arr, answer) => v(p, null, v("details", null, v("summary", null, name), v("ul", null, results)))));
 	};
 
 	//@ts-check
 
-	const Polls$2 = props => {
-	  const [text] = m$1('minus');
-	  const [count, setCount] = useStore('count', 0); // @ts-ignore
+	const Question = props => {
+	  const input = h$1(null);
+	  const [num, setNumber] = m$1(0);
+	  const [quests, setQuests] = m$1([]);
+	  y$1(() => {
+	    console.log(props);
+	    fetch('/questions/?poll=' + props.pollID).then(r => r.ok ? r.json() : null).then(r => {
+	      console.log(r);
+	      setQuests(r);
+	    });
+	  }, []);
 
-	  return v(p, null, v("h1", null, "Polls"), v("div", null, v("span", null, "some poll")));
+	  function submit() {
+	    var _document$querySelect;
+
+	    let ta = document.querySelector('form textarea'); // @ts-ignore
+
+	    let value = (ta === null || ta === void 0 ? void 0 : ta.value) || ((_document$querySelect = document.querySelector("input[type='radio']:checked")) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.name); // @ts-ignore
+
+	    value = value || Array.from(document.querySelectorAll('input.checkbox:checked')).map(box => box.value).join(',');
+	    console.log(value);
+	    fetch('/answer', {
+	      method: 'POST',
+	      headers: {
+	        'Content-Type': 'application/json;charset=utf-8',
+	        // @ts-ignore
+	        'X-CSRFToken': document.getElementById('csrf_token').value
+	      },
+	      body: JSON.stringify({
+	        quest: quests[num].id + '',
+	        value: value,
+	        user_sign: props.user || null
+	      })
+	    }).then(r => r.ok ? r.json() : null).then(r => {
+	      console.log(r);
+
+	      if (ta) {
+	        // @ts-ignore
+	        ta.value = ''; // @ts-ignore
+
+	        ta.focus();
+	      }
+
+	      props.user = r.user_sign;
+	      if (quests.length > num + 1) setNumber(num + 1);else {
+	        route('/finish/' + r.user_sign);
+	      }
+	    });
+	  }
+
+	  if (!quests.length) var currentQuest = v("div", {
+	    style: "text-align:center"
+	  }, "...");else {
+	    var _quests$num$choices;
+
+	    let choices = quests[num].kind == 1 || !((_quests$num$choices = quests[num].choices) === null || _quests$num$choices === void 0 ? void 0 : _quests$num$choices.length) ? v("textarea", null) : v("div", {
+	      class: style$1.choices
+	    }, v("li", null, quests[num].choices.map((c, i, arr) => v("div", null, v("input", {
+	      type: quests[num].kind == 2 ? "radio" : "checkbox",
+	      name: i,
+	      id: i
+	    }), v("label", {
+	      htmlFor: i
+	    }, c)))));
+	    var currentQuest = v("div", null, v("p", null, quests[num].text, "?"), v("form", {
+	      action: "."
+	    }, choices), v("button", {
+	      onClick: submit
+	    }, quests.length > num + 1 ? 'next' : 'finish'));
+	  } // @ts-ignore
+
+	  return v(p, null, v("h1", null, "Question ", num + 1, "/", quests.length), v("div", {
+	    class: style$1.quest
+	  }, currentQuest));
 	};
 
 	//@ts-check
-	h$1(v);
+
+	const Contact = props => {
+	  function onFinish(params) {
+	    // @ts-ignore
+	    let v = document.querySelector('input[type="text"]').value;
+
+	    if (!v || v.length < 2) {
+	      if (!confirm("Cлишком короткий контакт. Нужно минимум 3 символа. Вы уверены, что не хотите оставлять о себе данные?")) return;
+	    }
+
+	    fetch('/user_sign/' + props.user_sign, {
+	      method: 'PUT',
+	      headers: {
+	        'Content-Type': 'application/json;charset=utf-8',
+	        // @ts-ignore
+	        'X-CSRFToken': document.getElementById('csrf_token').value
+	      },
+	      body: JSON.stringify({
+	        id: props.user_sign,
+	        // @ts-ignore
+	        [~v.indexOf('@') ? 'email' : 'phone']: v
+	      })
+	    }).then(r => r.ok ? r.json() : false).then(r => {
+	      route('/');
+	    });
+	  } // @ts-ignore
+
+
+	  return v("div", {
+	    class: style$1.finish
+	  }, v("h3", null, "Thank you! Your identifier id is ", props.user_sign), v("h4", null, "Enter your additional contact information for (as you want)"), v("div", null, v("input", {
+	    type: "text",
+	    placehoder: "phone or e-mail"
+	  }), v("button", {
+	    onClick: onFinish
+	  }, "OK")));
+	};
+
+	//@ts-check
+	h$2(v);
 	const Title = m$2("h1")`
   text-align: center;
   color: red;
@@ -589,14 +736,15 @@
 	  // const [message] = useState('Polling App')
 	  // const [count, setCount] = useStore('count')
 	  // const { dispatch, count } = useStoreon('count')
-	  y$1(() => {
-	    document.title = 'props.title777';
-	  }, [props.title]); // @ts-ignore
-
-	  return v(p, null, v(Header, null), v(Router, null, v(Polls, {
+	  // @ts-ignore
+	  return v(p, null, v(match.Link, {
+	    href: "/"
+	  }, v(Header, null)), v(Router, null, v(Polls, {
 	    path: "/"
-	  }), v(Polls$2, {
-	    path: "/polls/:poll?"
+	  }), v(Question, {
+	    path: "/polls/:pollID"
+	  }), v(Contact, {
+	    path: "/finish/:user_sign"
 	  }), v(Polls$1, {
 	    path: "/results"
 	  })));

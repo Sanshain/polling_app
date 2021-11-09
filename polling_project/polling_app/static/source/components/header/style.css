@@ -46,3 +46,11 @@
 .header nav a.active {
 	background: rgba(0,0,0,0.4);
 }
+
+
+.poll{
+    padding      : 1 em;
+    border-radius: 1 em;
+    margin       : 1 em;
+    background-color: aliceblue;	
+}
