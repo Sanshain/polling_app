@@ -1,5 +1,3 @@
-# polls_app
-
 ## Technologies used
 
 - preact
