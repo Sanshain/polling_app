@@ -19,7 +19,7 @@ For frontend delelopment also you need following steps:
 4. Next step: go to static dir: `cd polling_app/static` and start `npm i`. This command will install all node.js dependencies.
 5. Start `rollup -c -w`
 
-API:
+## API:
 
 API Schema is availible on this [address](http://127.0.0.1/open_api)
 
