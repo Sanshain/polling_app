@@ -1,0 +1,95 @@
+.poll{
+    padding      : 1em;
+    border-radius: 1em;
+    margin       : 1em;
+    background-color: aliceblue;	
+    cursor: pointer;
+}
+
+.poll_href{
+    text-decoration: none;
+    color: #333;
+}
+
+.poll_href>div{
+    transition: .3s;
+}
+
+.poll_href>div:hover{
+    background-color: cornflowerblue;
+    color: cornsilk;
+}
+
+
+
+
+.quest{
+    margin: 1em;
+}
+
+.quest p{
+    margin: 1em;
+    font-size: large;
+}
+
+.quest textarea{
+    width: calc(100% - 2em);
+    display: block;    
+    padding      : 1em;
+    border-radius: 1em;
+    height       : 3em;    
+}
+
+.results_form input[type="submit"], .quest button, .finish button{
+    display: block;
+    display         : block;
+    margin          : 2em auto;
+    padding         : 0.6em 2em;
+    background-color: #9363bf;
+    color           : white;
+    border          : 1px solid gray;
+    border-radius   : 1em;
+    cursor          : pointer;    
+}
+
+.finish{
+    top: 6em;
+    position: relative;    
+}
+
+.finish h4{
+    text-align: center;
+}
+
+.results_form input, .finish input{
+    width        : 60%;
+    display      : block;
+    margin       : 1em auto;
+    padding      : 8px;
+    border-radius: 1em;
+    border       : 1px solid gray;    
+}
+
+.choices li, .choices input{
+    list-style-type:none;
+    cursor: pointer;
+    margin: 1em;
+    /* display: block; */
+}
+
+details{
+    margin           : 2em 9em;    
+    user-select      : none;
+}
+
+details>ul{
+    margin-left: 10 em;    
+}
+
+details li li{
+    color: gray;
+}
+
+details .active{
+    color: black;
+}
