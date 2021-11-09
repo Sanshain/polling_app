@@ -23,6 +23,6 @@ API:
 
 API Schema is availible on this [address](http://127.0.0.1/open_api)
 
-Other langs:
+Other languages availible:
 
-- [ru](./docs/ru.MD)
+- [russian](./docs/ru.MD)
