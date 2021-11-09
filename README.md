@@ -25,4 +25,4 @@ API Schema is availible on this [address](http://127.0.0.1/open_api)
 
 Other languages availible:
 
-- [russian](./docs/ru.MD)
+- [Russian](./docs/ru.MD)
