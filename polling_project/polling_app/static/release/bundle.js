@@ -526,7 +526,11 @@
 	    href: "/"
 	  }, "Polls"), v(match.Link, {
 	    href: "/results"
-	  }, "Completed polls")));
+	  }, "Completed polls"), v("a", {
+	    href: "/admin",
+	    target: "_blank",
+	    onClick: () => document.location.href = '/admin'
+	  }, "Log In")));
 	};
 
 	var style$1 = {"poll":"style_poll__1OI-i","poll_href":"style_poll_href__3Yi5q","quest":"style_quest__1lyrt","results_form":"style_results_form__2wB6K","finish":"style_finish__1LGMZ","choices":"style_choices__1AIJh","active":"style_active__1jijZ"};

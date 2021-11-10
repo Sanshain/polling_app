@@ -11,6 +11,7 @@ pyyaml = "*"
 
 [dev-packages]
 django-rest-swagger = "*"
+drf-yasg = "*"
 
 [requires]
 python_version = "3.6"

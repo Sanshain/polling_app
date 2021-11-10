@@ -11,7 +11,8 @@ class QuestionInline(admin.StackedInline):
 
 
 class PollAdmin(admin.ModelAdmin):
-    list_display = ['name', 'questions_count', 'get_desc']
+    list_display = ['name', 'questions_count', 'get_desc', 'active']
+    list_editable = ['active']
     search_fields = ('name',)
     inlines = [
         # QuestionInline
@@ -70,6 +71,5 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Question, QuestionAdmin)
 
-# admin.site.register(Question)
 admin.site.register(UserSign)
 admin.site.register(Answer)
