@@ -22,7 +22,8 @@ const Header = props => {
 		<nav>
 			<Link href="/">Polls</Link>
 			<Link href="/results">Completed polls</Link>
-			{/* <a href="/admin" target="_blank">Admin</a> */}
+
+			<a href="/admin" target="_blank" onClick={() => document.location.href='/admin'}>Log In</a>
 			{/* <Link href="/poll/:poll?">Poll</Link> */}
 		</nav>
 	</header>

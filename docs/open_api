@@ -1,0 +1,52 @@
+info:
+  description: "API for all things \u2026"
+  title: Polls API
+  version: ''
+openapi: 3.0.0
+paths:
+  /answer:
+    get:
+      operationId: answer_list
+      tags:
+      - answer
+    post:
+      operationId: answer_create
+      tags:
+      - answer
+  /polls/:
+    get:
+      operationId: polls_list
+      tags:
+      - polls
+  /questions/:
+    get:
+      operationId: questions_list
+      tags:
+      - questions
+  /user_sign/{id}:
+    patch:
+      operationId: user_sign_partial_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this user sign.
+          title: ID
+          type: integer
+      tags:
+      - user_sign
+    put:
+      operationId: user_sign_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this user sign.
+          title: ID
+          type: integer
+      tags:
+      - user_sign
+servers:
+- url: http://127.0.0.1:8000/open_api?format=openapi

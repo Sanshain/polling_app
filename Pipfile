@@ -6,11 +6,10 @@ name = "pypi"
 [packages]
 django = "==2.2.10"
 django-rest-framework = "*"
-django-rest-swagger = "*"
+drf-yasg = "*"
 pyyaml = "*"
 
 [dev-packages]
-django-rest-swagger = "*"
 
 [requires]
 python_version = "3.6"
